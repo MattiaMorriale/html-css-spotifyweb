@@ -23,12 +23,23 @@
     background-color: black;
 }
 
+.side-bar .container .box-logo{
+    width: 130px;
+
+    margin: 20px;
+}
+
+.box-box img{
+    width: 100%;
+}
+
 #big-box .main{
     flex-grow: 1;
 
-    height: 100%;
+    height: calc(100vh - 90px);
+    overflow-y: scroll;
 
-    padding-bottom: 90px;
+    margin-bottom: 90px;
 
     background-color: #141922;
 }
@@ -69,14 +80,11 @@
 }
 
 #big-box .main .album{
-    overflow-y: scroll;
-
     height: 100%;
 
     padding-top: 90px;
     padding-left: 20px;
     padding-right: 20px;
-
 }
 
 #big-box .main .album .category{
