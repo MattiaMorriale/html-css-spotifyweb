@@ -3,4 +3,177 @@
     padding: 0;
 
     box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+/* big-box */
+
+#big-box{
+    display: flex;
+
+    height: 100%;
+    width: 100%;
+}
+
+#big-box .side-bar{
+    width: 230px;
+    min-width: 230px;
+
+    background-color: red;
+}
+
+#big-box .main{
+    flex-grow: 1;
+
+    height: 100%;
+
+    padding-bottom: 90px;
+
+    background-color: #141922;
+}
+
+#big-box .main .upgrade{
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    opacity: .6;
+
+    background-color: #080b12;
+
+    height: 90px;
+    width: calc(100% - 230px);
+}
+
+#big-box .main .upgrade a{
+    text-decoration: none;
+
+    color: #ffffff;
+
+    margin-right: 25px;
+
+    font-weight: bold;
+    font-size: 12px;
+
+    border: solid #ffffff 2px;
+    border-radius: 25px;
+
+    padding: 15px 40px;
+}
+
+#big-box .main .album{
+    overflow-y: scroll;
+
+    height: 100%;
+
+    padding-top: 90px;
+    padding-left: 20px;
+}
+
+#big-box .main .album .category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px 0 40px 0;
+}
+
+#big-box .main .album .category ul{
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    list-style-type: none;
+
+    font-weight: bold;
+    font-size: 13px;
+
+    color:#7d7f84;
+}
+
+#big-box .main .recently .box{
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    padding: 30px 0 45px;
+}
+
+#big-box .main .recently .box .card-rec{
+    text-align: center;
+    
+    height: 100%;
+    width: calc(100% / 6 - 15px);
+
+    min-width: 214px;
+}
+
+#big-box .main .box-img{
+    height: 100%;
+    width: 100%;
+}
+
+#big-box .main .box-img img{
+    width: 100%;
+}
+
+#big-box .main .circle img{
+    border-radius: 50%;
+}
+
+#big-box .main .created-for .box{
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    padding: 30px 0 45px;
+}
+
+#big-box .main .created-for .box .card-crt{
+    text-align: center;
+
+    height: 100%;
+    width: calc(100% / 6 - 15px);    
+
+    min-width: 180px;
+}
+
+#big-box .main .popolar .box{
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    padding: 30px 0 45px;
+}
+
+#big-box .main .popolar .box .card-popol{
+    text-align: center;
+
+    height: 100%;
+    width: calc(100% / 6 - 15px);    
+
+    min-width: 180px;
+}
+
+/* player */
+
+#player{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    height: 90px;
+    width: 100%;
+
+    background-color: cadetblue;
 }
