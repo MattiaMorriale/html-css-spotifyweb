@@ -20,7 +20,7 @@
     width: 230px;
     min-width: 230px;
 
-    background-color: red;
+    background-color: black;
 }
 
 #big-box .main{
@@ -36,6 +36,7 @@
 #big-box .main .upgrade{
     position: fixed;
 
+
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -49,11 +50,14 @@
 }
 
 #big-box .main .upgrade a{
+    text-align: center;
+
     text-decoration: none;
 
     color: #ffffff;
 
     margin-right: 25px;
+    margin-left: 25px;
 
     font-weight: bold;
     font-size: 12px;
@@ -71,6 +75,8 @@
 
     padding-top: 90px;
     padding-left: 20px;
+    padding-right: 20px;
+
 }
 
 #big-box .main .album .category{
@@ -83,6 +89,7 @@
 
 #big-box .main .album .category ul{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 
     gap: 25px;
@@ -90,9 +97,45 @@
     list-style-type: none;
 
     font-weight: bold;
-    font-size: 13px;
+    font-size: 17px;
 
     color:#7d7f84;
+}
+
+#big-box .main .album .category ul li:nth-of-type(1) hr{
+    margin-right: auto;
+    margin-left: auto;
+    
+    width: 35px;
+    height: 3px;
+
+    background-color: #adff2f;
+
+    border-color:#adff2f;
+    border-style: solid;
+}
+
+#big-box .main strong{
+    display: block;
+    padding-top: 20px;
+    
+    color: white;
+
+    font-size: 17px;
+}
+
+#big-box .main .title{
+    font-size: 25px;
+    
+    color: white;
+}
+
+#big-box .main .sub{
+    font-size: .8em;
+
+    padding: 15px 0 15px;
+
+    color: #7d7f84;
 }
 
 #big-box .main .recently .box{
@@ -110,8 +153,6 @@
     
     height: 100%;
     width: calc(100% / 6 - 15px);
-
-    min-width: 214px;
 }
 
 #big-box .main .box-img{
@@ -141,9 +182,9 @@
     text-align: center;
 
     height: 100%;
-    width: calc(100% / 6 - 15px);    
+    width: calc(100% / 6 - 15px);
 
-    min-width: 180px;
+
 }
 
 #big-box .main .popolar .box{
@@ -160,9 +201,7 @@
     text-align: center;
 
     height: 100%;
-    width: calc(100% / 6 - 15px);    
-
-    min-width: 180px;
+    width: calc(100% / 6 - 15px); 
 }
 
 /* player */
@@ -175,5 +214,152 @@
     height: 90px;
     width: 100%;
 
-    background-color: cadetblue;
+    background-color: #282828;
+}
+
+/* query */
+
+@media screen and (max-width: 991px) {
+    #big-box .main .album .category ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        gap: 25px;
+    
+        list-style-type: none;
+    
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 40px;
+
+        color:#7d7f84;
+    }
+
+    #big-box .main .recently .box .card-rec{
+        text-align: center;
+        
+        height: 100%;
+        width: calc(100% / 4 - 15px);
+    
+    }
+
+    #big-box .main .created-for .box .card-crt{
+        text-align: center;
+    
+        height: 100%;
+        width: calc(100% / 4 - 15px);
+    }
+
+    #big-box .main .popolar .box .card-popol{
+        text-align: center;
+    
+        height: 100%;
+        width: calc(100% / 4 - 15px);    
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    #big-box .main .album .category ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        gap: 25px;
+    
+        list-style-type: none;
+    
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 40px;
+
+        color:#7d7f84;
+    }
+
+    #big-box .main .recently .box .card-rec{
+        text-align: center;
+        
+        height: 100%;
+        width: calc(100% / 2 - 15px);
+    }
+
+    #big-box .main .created-for .box .card-crt{
+        text-align: center;
+    
+        height: 100%;
+        width: calc(100% / 2 - 15px);    
+    
+    }
+
+    #big-box .main .popolar .box .card-popol{
+        text-align: center;
+    
+        height: 100%;
+        width: calc(100% / 2 - 15px);    
+    }
+
+}
+
+@media screen and (max-width: 575px){
+
+    #big-box .side-bar{
+        width: 50px;
+        min-width: 50px;
+    
+        background-color: red;
+    }
+
+    #big-box .main .upgrade{
+        position: fixed;
+    
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    
+        opacity: .6;
+    
+        background-color: #080b12;
+    
+        height: 90px;
+        width: calc(100% - 50px);
+    }
+
+    #big-box .main .album .category ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        gap: 25px;
+    
+        list-style-type: none;
+    
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 40px;
+    
+        color:#7d7f84;
+    }
+
+    #big-box .main .recently .box .card-rec{
+        text-align: center;
+        
+        height: 100%;
+        width: calc(100% / 2 - 15px);
+    }
+
+    #big-box .main .created-for .box .card-crt{
+        text-align: center;
+    
+        height: 100%;
+        width: calc(100% / 2 - 15px);    
+    
+    }
+
+    #big-box .main .popolar .box .card-popol{
+        text-align: center;
+    
+        height: 100%;
+        width: calc(100% / 2 - 15px);    
+    }
 }
